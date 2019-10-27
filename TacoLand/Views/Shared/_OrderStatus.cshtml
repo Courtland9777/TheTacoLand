@@ -1,0 +1,20 @@
+﻿@model string
+@using TacoLand.Utility
+<div style="width:100%">
+    @if (Model == SD.StatusSubmitted)
+    {
+        <img src="~/images/OrderPlaced.png" class="width100Pct" />
+    }
+    @if (Model == SD.StatusInProcess)
+    {
+        <img src="~/images/InKitchen.png" class="width100Pct" />
+    }
+    @if (Model == SD.StatusReady)
+    {
+        <img src="~/images/ReadyForPickup.png" class="width100Pct" />
+    }
+    @if (Model == SD.StatusCompleted)
+    {
+        <img src="~/images/completed.png" class="width100Pct" />
+    }
+</div>
